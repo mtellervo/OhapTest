@@ -56,7 +56,7 @@ public class IncomingMessage {
         return bytes;
     }
 
-    public void readFrom(InputStream inputStream) {
+    public void readFrom(InputStream inputStream) throws IOException{
         //Reads one message from the given InputStream into the internal buffer.
 
     int count = 0;
@@ -72,7 +72,6 @@ public class IncomingMessage {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     public boolean binary8(){

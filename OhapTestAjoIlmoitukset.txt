@@ -1,0 +1,69 @@
+         07-21 16:11:23.359  23668-23668/fi.oulu.tol.ohaptest D/OhapTestActivity? Connection to server succeeded
+07-21 16:11:23.364  23668-23699/fi.oulu.tol.ohaptest W/dalvikvm? threadid=11: thread exiting with uncaught exception (group=0x41cde700)
+07-21 16:11:23.374  23668-23699/fi.oulu.tol.ohaptest E/AndroidRuntime? FATAL EXCEPTION: Thread-6884
+    java.lang.SecurityException: Permission denied (missing INTERNET permission?)
+            at java.net.InetAddress.lookupHostByName(InetAddress.java:418)
+            at java.net.InetAddress.getAllByNameImpl(InetAddress.java:236)
+            at java.net.InetAddress.getAllByName(InetAddress.java:214)
+            at libcore.net.http.HttpConnection.<init>(HttpConnection.java:70)
+            at libcore.net.http.HttpConnection.<init>(HttpConnection.java:50)
+            at libcore.net.http.HttpConnection$Address.connect(HttpConnection.java:340)
+            at libcore.net.http.HttpConnectionPool.get(HttpConnectionPool.java:87)
+            at libcore.net.http.HttpConnection.connect(HttpConnection.java:128)
+            at libcore.net.http.HttpEngine.openSocketConnection(HttpEngine.java:316)
+            at libcore.net.http.HttpEngine.connect(HttpEngine.java:311)
+            at libcore.net.http.HttpEngine.sendSocketRequest(HttpEngine.java:290)
+            at libcore.net.http.HttpEngine.sendRequest(HttpEngine.java:240)
+            at libcore.net.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:81)
+            at com.henrikhedberg.hbdp.client.HbdpConnection$HbdpThread.connect(HbdpConnection.java:277)
+            at com.henrikhedberg.hbdp.client.HbdpConnection$HbdpThread.run(HbdpConnection.java:266)
+     Caused by: libcore.io.GaiException: getaddrinfo failed: EAI_NODATA (No address associated with hostname)
+            at libcore.io.Posix.getaddrinfo(Native Method)
+            at libcore.io.ForwardingOs.getaddrinfo(ForwardingOs.java:61)
+            at java.net.InetAddress.lookupHostByName(InetAddress.java:405)
+            at java.net.InetAddress.getAllByNameImpl(InetAddress.java:236)
+            at java.net.InetAddress.getAllByName(InetAddress.java:214)
+            at libcore.net.http.HttpConnection.<init>(HttpConnection.java:70)
+            at libcore.net.http.HttpConnection.<init>(HttpConnection.java:50)
+            at libcore.net.http.HttpConnection$Address.connect(HttpConnection.java:340)
+            at libcore.net.http.HttpConnectionPool.get(HttpConnectionPool.java:87)
+            at libcore.net.http.HttpConnection.connect(HttpConnection.java:128)
+            at libcore.net.http.HttpEngine.openSocketConnection(HttpEngine.java:316)
+            at libcore.net.http.HttpEngine.connect(HttpEngine.java:311)
+            at libcore.net.http.HttpEngine.sendSocketRequest(HttpEngine.java:290)
+            at libcore.net.http.HttpEngine.sendRequest(HttpEngine.java:240)
+            at libcore.net.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:81)
+            at com.henrikhedberg.hbdp.client.HbdpConnection$HbdpThread.connect(HbdpConnection.java:277)
+            at com.henrikhedberg.hbdp.client.HbdpConnection$HbdpThread.run(HbdpConnection.java:266)
+     Caused by: libcore.io.ErrnoException: getaddrinfo failed: EACCES (Permission denied)
+            at libcore.io.Posix.getaddrinfo(Native Method)
+            at libcore.io.ForwardingOs.getaddrinfo(ForwardingOs.java:61)
+            at java.net.InetAddress.lookupHostByName(InetAddress.java:405)
+            at java.net.InetAddress.getAllByNameImpl(InetAddress.java:236)
+            at java.net.InetAddress.getAllByName(InetAddress.java:214)
+            at libcore.net.http.HttpConnection.<init>(HttpConnection.java:70)
+            at libcore.net.http.HttpConnection.<init>(HttpConnection.java:50)
+            at libcore.net.http.HttpConnection$Address.connect(HttpConnection.java:340)
+            at libcore.net.http.HttpConnectionPool.get(HttpConnectionPool.java:87)
+            at libcore.net.http.HttpConnection.connect(HttpConnection.java:128)
+            at libcore.net.http.HttpEngine.openSocketConnection(HttpEngine.java:316)
+            at libcore.net.http.HttpEngine.connect(HttpEngine.java:311)
+            at libcore.net.http.HttpEngine.sendSocketRequest(HttpEngine.java:290)
+            at libcore.net.http.HttpEngine.sendRequest(HttpEngine.java:240)
+            at libcore.net.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:81)
+            at com.henrikhedberg.hbdp.client.HbdpConnection$HbdpThread.connect(HbdpConnection.java:277)
+            at com.henrikhedberg.hbdp.client.HbdpConnection$HbdpThread.run(HbdpConnection.java:266)
+07-21 16:11:23.604  23668-23668/fi.oulu.tol.ohaptest D/libEGL? loaded /system/lib/egl/libEGL_mali.so
+07-21 16:11:23.604  23668-23668/fi.oulu.tol.ohaptest D/libEGL? loaded /system/lib/egl/libGLESv1_CM_mali.so
+07-21 16:11:23.614  23668-23668/fi.oulu.tol.ohaptest D/libEGL? loaded /system/lib/egl/libGLESv2_mali.so
+07-21 16:11:23.614  23668-23668/fi.oulu.tol.ohaptest E/? Device driver API match
+    Device driver API version: 23
+    User space API version: 23
+07-21 16:11:23.614  23668-23668/fi.oulu.tol.ohaptest E/? mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Wed Oct  9 21:05:57 KST 2013
+07-21 16:11:23.709  23668-23668/fi.oulu.tol.ohaptest D/OpenGLRenderer? Enabling debug mode 0
+07-21 16:11:31.924  23668-23668/fi.oulu.tol.ohaptest I/Choreographer? Skipped 491 frames!  The application may be doing too much work on its main thread.
+07-21 16:12:31.369  23668-23699/fi.oulu.tol.ohaptest I/Process? Sending signal. PID: 23668 SIG: 9
+07-21 16:13:17.004  23955-23955/fi.oulu.tol.ohaptest E/? mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Wed Oct  9 21:05:57 KST 2013
+07-21 16:13:17.069  23955-23955/fi.oulu.tol.ohaptest D/OpenGLRenderer? Enabling debug mode 0
+07-21 16:13:25.229  23955-23955/fi.oulu.tol.ohaptest I/Choreographer? Skipped 488 frames!  The application may be doing too much work on its main thread.
+07-21 16:13:36.449  23955-23969/fi.oulu.tol.ohaptest I/Process? Sending signal. PID: 23955 SIG: 9   

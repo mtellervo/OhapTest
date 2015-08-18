@@ -8,7 +8,8 @@ import java.util.Arrays;
 /**
  * Created by Marja on 11/05/2015.
  */
-public class OutgoingMessage {
+public class OutgoingMessage
+{
     private static final String TAG = "OutgoingMessage";
     /**
      * The internal buffer. It will be grown if the message do not fit to it.
